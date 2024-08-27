@@ -29,7 +29,6 @@ exports.createArticle = async (req, res) => {
 // Get a single Article by ID
 
 exports.getArticleById = async (req, res) => {
-  console.log(req.params.id);
   try {
     const article = await Article.findById(req.params.id);
     if (!article)

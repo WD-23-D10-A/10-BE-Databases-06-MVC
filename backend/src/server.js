@@ -12,6 +12,8 @@ mongoose.connect("mongodb://127.0.0.1:27017/articlesdb");
 server.use(express.json());
 
 server.use("/api/articles", articleRouter);
+// beispiel
+// server.use("/api/author", authorRouter);
 
 server.listen(3001, () => {
   console.log("server is running on port 3001");
